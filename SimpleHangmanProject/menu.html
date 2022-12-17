@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="project.css">
+    </head>
+        
+    <body>
+        <h1>Learning German Hangman</h1>
+         <br>
+         <script>
+             </script>
+         <h2>Choose a subject:</h2>
+         <h2 id="display">--</h2> 
+         <p><button type="button" id="numbers" onclick="assign('numbers')">Numbers</button>
+         <button type="button" id="animals" onclick="assign('animals')">Animals</button>
+         <button type="button" id="family" onclick="assign('family')">Family</button></p>
+        
+        <br>
+        <div><p><button type="button" id="family"  onclick="createGame(subject)">Let's Play!</button></p></div>
+         <script>
+             var subject = null;
+
+             function assign(choice){
+                 subject = choice;
+                 switch(choice){
+                     case "numbers":
+                     document.getElementById("display").innerHTML="Numbers";
+                     break;
+
+                     case "animals": 
+                     document.getElementById("display").innerHTML="Animals";
+                     break;
+
+                     case "family": 
+                     document.getElementById("display").innerHTML="Family";
+                     break;
+
+                     default: 
+                     document.getElementById("display").innerHTML="--";
+                     break;
+                 }
+                 
+             }
+                 
+             function createGame(subject){//for
+                 switch(subject){
+                     case "numbers": 
+                     sessionStorage.setItem("subject", "numbers");
+                     window.location.replace("game.html");
+                     break;
+
+                     case "animals": 
+                     sessionStorage.setItem("subject", "animals");
+                     window.location.replace("game.html");
+                     break;
+
+                     case "family": 
+                     sessionStorage.setItem("subject", "family");
+                     window.location.replace("game.html");
+                     break;
+
+                     default:
+                    document.getElementById("display").innerHTML = "No subject chosen! Please choose a subject!";
+                
+                 }
+             } 
+         </script>
+
+    </body>    
+    
+</html>

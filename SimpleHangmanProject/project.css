@@ -1,0 +1,86 @@
+
+
+    body{
+        text-align: center;
+        position: relative;
+    }
+    p button{
+        width: 150px;
+        height: 30px;
+        font-weight: bold;
+        font-size: larger;
+    }
+    button:hover{
+        background-color:lightskyblue;
+        color:white;
+    }
+    div p button{
+        width: 200px;
+        height: 50px;
+        font-size: x-large;
+        background-color: rgb(25, 0, 255);
+        color: white;
+     }
+    img{
+        
+        position: absolute;
+        right: 50px;
+        
+    }
+    h1{
+        font-size: 1.5cm;
+    }
+    div button{
+        width: 50px;
+        height: 50px;
+        background-color: white;
+    }
+    #keyboard{
+        position: absolute;
+        
+        width: 500px;
+        top:400px;
+        left: 100px;
+
+    }
+    #guess{
+        text-align: right;
+        width: 400px;
+        position: absolute;
+        font-size: 1.25cm;
+        top: 250px;
+        right: 450px;
+
+        
+    }
+    #final{
+        position: absolute;
+        width: 400px;
+        height: 150px;
+        opacity: 1;
+        z-index: -1;
+        border-color: black;
+        border-style: solid;
+        background-color: white;
+        left: 300px;
+        top: 300px;
+
+        
+    }
+    #main{
+        margin: auto;
+        position: relative;
+        height: 1000px;
+        width: 1000px;
+        background-color: white;
+    }
+    #yes{
+        
+        width: 150px;
+    }
+    #no{
+      
+        width: 150px;
+    }
+    
+   
